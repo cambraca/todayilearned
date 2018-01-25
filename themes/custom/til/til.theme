@@ -120,7 +120,7 @@ function til_preprocess_select(array &$variables) {
 function til_preprocess_field(array &$variables, $hook) {
   switch ($variables['element']['#field_name']) {
     case 'field_source':
-      $manager = new Pdp\Manager(new Pdp\Cache(), new Pdp\CurlHttpClient());
+      $manager = new Pdp\Manager(new Pdp\Cache(file_directory_temp()), new Pdp\CurlHttpClient());
       $rules = $manager->getRules('https://raw.githubusercontent.com/publicsuffix/list/master/public_suffix_list.dat');
       foreach ($variables['items'] as &$item) {
         $url = $item['content']['#url']->toString();
