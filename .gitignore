@@ -15,6 +15,7 @@
 vendor
 modules/contrib
 themes/contrib
+!core/assets/vendor
 
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
