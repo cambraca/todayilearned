@@ -1,0 +1,13 @@
+.views-element-container .ds-3col-stacked {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left; }
+.ds-3col-stacked .group-left, .ds-3col-stacked .group-middle, .ds-3col-stacked .group-right {
+  margin-bottom: 10px;
+  color: rgba(51, 51, 51, 0.5); }
+  .ds-3col-stacked .group-left a, .ds-3col-stacked .group-middle a, .ds-3col-stacked .group-right a {
+    color: rgba(7, 141, 146, 0.7); }
+.ds-3col-stacked .group-right {
+  text-align: right; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,8 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      styles/styles.css: {}
+  js:
+    scripts/scripts.js: {}
+    node_modules/moment/min/moment.min.js: {minified: true}
