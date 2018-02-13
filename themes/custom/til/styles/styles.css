@@ -22,4 +22,12 @@
     line-height: 170%;
     margin: 0 0 0 6px; }
 
+.label {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 80%; }
+
+.field {
+  margin-bottom: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
