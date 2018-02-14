@@ -1,0 +1,20 @@
+.post {
+  display: grid;
+  grid-template-areas: "time source" "tags tags" "body body"; }
+  @media screen and (min-width: 480px) {
+    .post {
+      grid-template-areas: "time tags source" "body body body";
+      grid-auto-columns: 30% 30% 40%; } }
+  .post > .time {
+    grid-area: time; }
+  .post > .tags {
+    grid-area: tags; }
+  .post > .source {
+    grid-area: source;
+    text-align: right; }
+  .post > .time, .post > .tags, .post > .source {
+    margin-bottom: 10px; }
+  .post > .body {
+    grid-area: body; }
+
+/*# sourceMappingURL=layout.css.map */

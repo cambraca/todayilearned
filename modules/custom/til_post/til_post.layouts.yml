@@ -1,0 +1,17 @@
+post:
+  label: Post
+  category: TIL
+  class: '\Drupal\Core\Layout\LayoutDefault'
+  type: partial
+  template: templates/post
+  library: til_post/layout
+#  icon: images/ds-3col-stacked.png
+  regions:
+    time:
+      label: Time
+    tags:
+      label: Tags
+    source:
+      label: Source
+    body:
+      label: Body

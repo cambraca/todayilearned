@@ -1,0 +1,22 @@
+.post
+  display: grid
+  grid-template-areas: 'time source' 'tags tags' 'body body'
+  @media screen and (min-width: 480px)
+    grid-template-areas: 'time tags source' 'body body body'
+    grid-auto-columns: 30% 30% 40%
+
+  > .time
+    grid-area: time
+
+  > .tags
+    grid-area: tags
+
+  > .source
+    grid-area: source
+    text-align: right
+
+  > .time, > .tags, > .source
+    margin-bottom: 10px
+
+  > .body
+    grid-area: body
