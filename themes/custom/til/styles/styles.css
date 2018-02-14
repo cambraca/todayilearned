@@ -1,7 +1,9 @@
 .views-element-container .post {
-  padding: 15px 0;
   border-bottom: 1px solid #e5e5e5;
-  text-align: left; }
+  text-align: left;
+  padding: 15px 0; }
+  .views-element-container .post:first-child {
+    padding-top: 0; }
 .post .time, .post .tags, .post .source {
   color: rgba(51, 51, 51, 0.5); }
   .post .time a, .post .tags a, .post .source a {
