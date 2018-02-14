@@ -325,9 +325,38 @@
         <div class="col-sm-6 col-md-6">
           {{ page.footer_menu }}
         </div>
-        {% if show_social_icon %}
+
+        <!-- Credit link -->
+        {% if show_credit_link %}
+          <div class="col-sm-6 col-md-6">
+            <p class="credit-link">Designed by <a href="http://www.zymphonies.com" target="_blank">Zymphonies</a></p>
+          </div>
+        {% endif %}
+        <!-- End Credit link -->
+
+      </div>
+    </div>
+  </div>
+{% endif %}
+<!-- End Footer Menu -->
+
+{% if copyright_text or show_credit_link %}
+<div class="copyright">
+  <div class="container">
+    <div class="row">
+
+      <!-- Copyright -->
+      <div class="col-sm-6 col-md-6">
+        {% if copyright_text %}
+          <p>{{copyright_text}}</p>
+        {% endif %}
+      </div>
+      <!-- End Copyright -->
+
+      {% if show_social_icon %}
         <div class="col-sm-6 col-md-6">
           <div class="social-media">
+            <p>Author:</p>
             {% if facebook_url %}
               <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
             {% endif %}
@@ -348,33 +377,7 @@
             {% endif %}
           </div>
         </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!-- End Footer Menu -->
-
-{% if copyright_text or show_credit_link %}
-<div class="copyright">
-  <div class="container">
-    <div class="row">
-
-      <!-- Copyright -->
-      <div class="col-sm-6 col-md-6">
-        {% if copyright_text %}
-          <p>{{copyright_text}}</p>
-        {% endif %}
-      </div>
-      <!-- End Copyright -->
-
-      <!-- Credit link -->
-      {% if show_credit_link %}
-        <div class="col-sm-6 col-md-6">
-          <p class="credit-link">Designed by <a href="http://www.zymphonies.com" target="_blank">Zymphonies</a></p>
-        </div>
       {% endif %}
-      <!-- End Credit link -->
 
     </div>
   </div>
