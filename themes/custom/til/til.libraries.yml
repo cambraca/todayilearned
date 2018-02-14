@@ -6,3 +6,8 @@ global-styling:
   js:
     scripts/scripts.js: {}
     node_modules/moment/min/moment.min.js: {minified: true}
+
+fontawesome:
+  version: 1.x
+  js:
+    https://use.fontawesome.com/releases/v5.0.6/js/all.js: {type: external, minified: true, attributes:{defer:true}}

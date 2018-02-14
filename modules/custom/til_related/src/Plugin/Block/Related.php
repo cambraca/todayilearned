@@ -65,7 +65,7 @@ class Related extends BlockBase {
     if (!$nids)
       return FALSE;
 
-    $this->generatedLabel = $this->t('Previous on <a href="@link">@tag</a>', [
+    $this->generatedLabel = $this->t('<i class="fas fa-plus"></i> Previous on <a href="@link">@tag</a>', [
       '@tag' => $tag->label(),
       '@link' => $tag->toUrl()->toString(),
     ]);
@@ -95,7 +95,7 @@ class Related extends BlockBase {
     if (!$nids)
       return FALSE;
 
-    $this->generatedLabel = $this->t('Latest on <a href="@link">@tag</a>', [
+    $this->generatedLabel = $this->t('<i class="fas fa-plus"></i> Latest on <a href="@link">@tag</a>', [
       '@tag' => $tag->label(),
       '@link' => $tag->toUrl()->toString(),
     ]);
@@ -122,7 +122,7 @@ class Related extends BlockBase {
     if (current($nids) == $node->id())
       return FALSE;
 
-    $this->generatedLabel = $this->t('Latest');
+    $this->generatedLabel = $this->t('<i class="fas fa-plus"></i> Latest');
 
     return Node::load(current($nids));
   }
@@ -154,7 +154,7 @@ class Related extends BlockBase {
     /** @var \Drupal\taxonomy\Entity\Term $tag */
     $tag = $ret->field_tags[0]->entity;
 
-    $this->generatedLabel = $this->t('Latest on <a href="@link">@tag</a>', [
+    $this->generatedLabel = $this->t('<i class="fas fa-plus"></i> Latest on <a href="@link">@tag</a>', [
       '@tag' => $tag->label(),
       '@link' => $tag->toUrl()->toString(),
     ]);

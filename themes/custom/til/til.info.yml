@@ -31,3 +31,11 @@ regions:
   footer_menu: 'Footer Menu'
   google_map: 'Google Map'
   auto_hidden_block: 'Auto hidden blocks'
+
+libraries-override:
+  drupal8_zymphonies_theme/fontawesome: til/fontawesome
+
+  drupal8_zymphonies_theme/global-components:
+    css:
+      theme:
+        css/font-awesome.css: false
