@@ -30,4 +30,11 @@
 .field {
   margin-bottom: 10px; }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+  body #wrapper {
+    flex-grow: 1; }
+
 /*# sourceMappingURL=styles.css.map */
