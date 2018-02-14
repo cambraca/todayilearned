@@ -1,3 +1,7 @@
 {% for item in items %}
-  {{ item.content }}{% if not loop.last %}, {% endif %}
+  <a href="{{ url('entity.taxonomy_term.canonical', {'taxonomy_term': item.content['#taxonomy_term'].id()}) }}">
+    {% if item.content['#taxonomy_term'].field_icon.value %}
+      <i class="{{ item.content['#taxonomy_term'].field_icon.value }}"></i>
+    {% endif %}
+    {{ item.content['#taxonomy_term'].label() }}</a>{% if not loop.last %}, {% endif %}
 {% endfor %}
