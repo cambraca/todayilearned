@@ -5,6 +5,7 @@ package: Custom
 core: 8.x
 libraries:
   - til/global-styling
+  - til/devicon
 
 base theme: drupal8_zymphonies_theme
 
