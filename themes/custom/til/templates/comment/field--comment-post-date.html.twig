@@ -1,0 +1,5 @@
+<div class="label">
+  {% for item in items %}
+    <time datetime="{{ item.content|render|date('c') }}" title="{{ item.content|render|date('Y-m-d H:i') }}" class="time-ago"></time>
+  {% endfor %}
+</div>
