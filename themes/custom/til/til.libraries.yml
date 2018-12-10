@@ -16,4 +16,4 @@ devicon:
   version: 1.x
   css:
     theme:
-      https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css: {minified:true}
+      https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css: {minified:true}
