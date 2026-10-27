@@ -1,0 +1,11 @@
+{
+  "name": "drupal/adminimal_theme",
+  "description": "Locally reviewed Drupal 11 compatibility metadata port",
+  "type": "drupal-theme",
+  "version": "1.7.0",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/core": "^9.3 || ^10 || ^11",
+    "drupal/seven": "~1.0"
+  }
+}

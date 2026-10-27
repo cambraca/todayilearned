@@ -50,7 +50,7 @@ class Related extends BlockBase {
     /** @var \Drupal\taxonomy\Entity\Term $tag */
     $tag = $node->field_tags[0]->entity;
 
-    $query = \Drupal::entityQuery('node');
+    $query = \Drupal::entityQuery('node')->accessCheck(TRUE);
     $query->condition('type', 'post');
     $query->condition('status', Node::PUBLISHED);
 
@@ -80,7 +80,7 @@ class Related extends BlockBase {
     /** @var \Drupal\taxonomy\Entity\Term $tag */
     $tag = $node->field_tags[0]->entity;
 
-    $query = \Drupal::entityQuery('node');
+    $query = \Drupal::entityQuery('node')->accessCheck(TRUE);
     $query->condition('type', 'post');
     $query->condition('status', Node::PUBLISHED);
 
@@ -107,7 +107,7 @@ class Related extends BlockBase {
     /** @var \Drupal\taxonomy\Entity\Term $tag */
     $tag = $node->field_tags[0]->entity;
 
-    $query = \Drupal::entityQuery('node');
+    $query = \Drupal::entityQuery('node')->accessCheck(TRUE);
     $query->condition('type', 'post');
     $query->condition('status', Node::PUBLISHED);
 
@@ -135,7 +135,7 @@ class Related extends BlockBase {
     foreach ($node->field_tags as $tagRef)
       $tagTids[] = $tagRef->target_id;
 
-    $query = \Drupal::entityQuery('node');
+    $query = \Drupal::entityQuery('node')->accessCheck(TRUE);
     $query->condition('type', 'post');
     $query->condition('status', Node::PUBLISHED);
 

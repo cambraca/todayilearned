@@ -1,0 +1,6 @@
+name: 'GeSHi Filter'
+description: 'Provides a filter to highlight source code using the GeSHi library (Generic Syntax Highlighter)'
+type: module
+package: 'Filters'
+core_version_requirement: ^9.3 || ^10 || ^11
+configure: admin/config/content/formats/geshifilter

@@ -1,0 +1,7 @@
+name: codesnippetgeshi
+type: module
+description: "Integrate the plugin CodeSnippetGeshi from CKEditor in Drupal. It provides a better way to edit code for Geshifilter module."
+core_version_requirement: ^9.3 || ^10
+package: Filters
+dependencies:
+  - geshifilter
